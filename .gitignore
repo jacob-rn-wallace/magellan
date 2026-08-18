@@ -1,0 +1,16 @@
+# Shallow clone of brouhaha/nonpareil (GPLv2 code / CC-BY-SA 2.5 ncd/
+# tree), kept locally purely as a research reference for how segment
+# geometry and the character table were derived - see CLAUDE.md. Not a
+# dependency of anything in hp41-display/ at runtime, and per this
+# project's convention of treating other repos' code as a black box
+# rather than hosting a second copy of it, it's never committed here.
+# Re-clone with:
+#   git clone --depth 1 https://github.com/brouhaha/nonpareil.git
+nonpareil/
+
+.venv/
+__pycache__/
+*.pyc
+
+.claude/settings.local.json
+.DS_Store

@@ -1,0 +1,770 @@
+[
+  {
+    "id": "0x00",
+    "text": "@",
+    "segs": "abdefhi",
+    "comment": ""
+  },
+  {
+    "id": "0x01",
+    "text": "A",
+    "segs": "abcefgh",
+    "comment": ""
+  },
+  {
+    "id": "0x02",
+    "text": "B",
+    "segs": "abcdhij",
+    "comment": ""
+  },
+  {
+    "id": "0x03",
+    "text": "C",
+    "segs": "adef",
+    "comment": ""
+  },
+  {
+    "id": "0x04",
+    "text": "D",
+    "segs": "abcdij",
+    "comment": ""
+  },
+  {
+    "id": "0x05",
+    "text": "E",
+    "segs": "adefgh",
+    "comment": ""
+  },
+  {
+    "id": "0x06",
+    "text": "F",
+    "segs": "aefgh",
+    "comment": ""
+  },
+  {
+    "id": "0x07",
+    "text": "G",
+    "segs": "acdefh",
+    "comment": ""
+  },
+  {
+    "id": "0x08",
+    "text": "H",
+    "segs": "bcefgh",
+    "comment": ""
+  },
+  {
+    "id": "0x09",
+    "text": "I",
+    "segs": "adij",
+    "comment": ""
+  },
+  {
+    "id": "0x0a",
+    "text": "J",
+    "segs": "bcde",
+    "comment": ""
+  },
+  {
+    "id": "0x0b",
+    "text": "K",
+    "segs": "efgkm",
+    "comment": ""
+  },
+  {
+    "id": "0x0c",
+    "text": "L",
+    "segs": "def",
+    "comment": ""
+  },
+  {
+    "id": "0x0d",
+    "text": "M",
+    "segs": "bcefkl",
+    "comment": ""
+  },
+  {
+    "id": "0x0e",
+    "text": "N",
+    "segs": "bceflm",
+    "comment": ""
+  },
+  {
+    "id": "0x0f",
+    "text": "O",
+    "segs": "abcdef",
+    "comment": ""
+  },
+  {
+    "id": "0x10",
+    "text": "P",
+    "segs": "abefgh",
+    "comment": ""
+  },
+  {
+    "id": "0x11",
+    "text": "Q",
+    "segs": "abcdefm",
+    "comment": ""
+  },
+  {
+    "id": "0x12",
+    "text": "R",
+    "segs": "abefghm",
+    "comment": ""
+  },
+  {
+    "id": "0x13",
+    "text": "S",
+    "segs": "acdfgh",
+    "comment": ""
+  },
+  {
+    "id": "0x14",
+    "text": "T",
+    "segs": "aij",
+    "comment": ""
+  },
+  {
+    "id": "0x15",
+    "text": "U",
+    "segs": "bcdef",
+    "comment": ""
+  },
+  {
+    "id": "0x16",
+    "text": "V",
+    "segs": "efkn",
+    "comment": ""
+  },
+  {
+    "id": "0x17",
+    "text": "W",
+    "segs": "bcefmn",
+    "comment": ""
+  },
+  {
+    "id": "0x18",
+    "text": "X",
+    "segs": "klmn",
+    "comment": ""
+  },
+  {
+    "id": "0x19",
+    "text": "Y",
+    "segs": "jkl",
+    "comment": ""
+  },
+  {
+    "id": "0x1a",
+    "text": "Z",
+    "segs": "adkn",
+    "comment": ""
+  },
+  {
+    "id": "0x1b",
+    "text": "[",
+    "segs": "adef",
+    "comment": ""
+  },
+  {
+    "id": "0x1c",
+    "text": "\\",
+    "segs": "lm",
+    "comment": ""
+  },
+  {
+    "id": "0x1d",
+    "text": "]",
+    "segs": "abcd",
+    "comment": ""
+  },
+  {
+    "id": "0x1e",
+    "text": "?",
+    "segs": "abkn",
+    "comment": ""
+  },
+  {
+    "id": "0x1f",
+    "text": "_",
+    "segs": "d",
+    "comment": ""
+  },
+  {
+    "id": "0x20",
+    "text": " ",
+    "segs": "",
+    "comment": ""
+  },
+  {
+    "id": "0x21",
+    "text": "!",
+    "segs": "ij",
+    "comment": ""
+  },
+  {
+    "id": "0x22",
+    "text": "\"",
+    "segs": "fi",
+    "comment": "???"
+  },
+  {
+    "id": "0x23",
+    "text": "#",
+    "segs": "bcdghij",
+    "comment": ""
+  },
+  {
+    "id": "0x24",
+    "text": "$",
+    "segs": "acdfghij",
+    "comment": ""
+  },
+  {
+    "id": "0x25",
+    "text": "%",
+    "segs": "cfghklmn",
+    "comment": ""
+  },
+  {
+    "id": "0x26",
+    "text": "&",
+    "segs": "acdklmn",
+    "comment": ""
+  },
+  {
+    "id": "0x27",
+    "text": "'",
+    "segs": "i",
+    "comment": ""
+  },
+  {
+    "id": "0x28",
+    "text": "(",
+    "segs": "km",
+    "comment": ""
+  },
+  {
+    "id": "0x29",
+    "text": ")",
+    "segs": "ln",
+    "comment": ""
+  },
+  {
+    "id": "0x2a",
+    "text": "*",
+    "segs": "ghijklmn",
+    "comment": ""
+  },
+  {
+    "id": "0x2b",
+    "text": "+",
+    "segs": "ghij",
+    "comment": ""
+  },
+  {
+    "id": "0x2c",
+    "text": "?",
+    "segs": "ghkm",
+    "comment": "left goose"
+  },
+  {
+    "id": "0x2d",
+    "text": "-",
+    "segs": "gh",
+    "comment": ""
+  },
+  {
+    "id": "0x2e",
+    "text": "?",
+    "segs": "ghln",
+    "comment": "right goose"
+  },
+  {
+    "id": "0x2f",
+    "text": "/",
+    "segs": "kn",
+    "comment": ""
+  },
+  {
+    "id": "0x30",
+    "text": "0",
+    "segs": "abcdefkn",
+    "comment": "zero with slash to distinguish from letter O"
+  },
+  {
+    "id": "0x31",
+    "text": "1",
+    "segs": "bc",
+    "comment": ""
+  },
+  {
+    "id": "0x32",
+    "text": "2",
+    "segs": "abdegh",
+    "comment": ""
+  },
+  {
+    "id": "0x33",
+    "text": "3",
+    "segs": "abcdgh",
+    "comment": ""
+  },
+  {
+    "id": "0x34",
+    "text": "4",
+    "segs": "bcfgh",
+    "comment": ""
+  },
+  {
+    "id": "0x35",
+    "text": "5",
+    "segs": "acdhl",
+    "comment": ""
+  },
+  {
+    "id": "0x36",
+    "text": "6",
+    "segs": "acdefgh",
+    "comment": ""
+  },
+  {
+    "id": "0x37",
+    "text": "7",
+    "segs": "abc",
+    "comment": ""
+  },
+  {
+    "id": "0x38",
+    "text": "8",
+    "segs": "abcdefgh",
+    "comment": ""
+  },
+  {
+    "id": "0x39",
+    "text": "9",
+    "segs": "abcdfgh",
+    "comment": ""
+  },
+  {
+    "id": "0x3a",
+    "text": "?",
+    "segs": "abcdefghijklmn",
+    "comment": "starburst, all segments on"
+  },
+  {
+    "id": "0x3b",
+    "text": ";",
+    "segs": "gn",
+    "comment": ""
+  },
+  {
+    "id": "0x3c",
+    "text": "<",
+    "segs": "dkn",
+    "comment": ""
+  },
+  {
+    "id": "0x3d",
+    "text": "=",
+    "segs": "dgh",
+    "comment": ""
+  },
+  {
+    "id": "0x3e",
+    "text": ">",
+    "segs": "dlm",
+    "comment": ""
+  },
+  {
+    "id": "0x3f",
+    "text": "?",
+    "segs": "abfhj",
+    "comment": ""
+  },
+  {
+    "id": "0x40",
+    "text": "?",
+    "segs": "efgh",
+    "comment": "APP lazy T"
+  },
+  {
+    "id": "0x41",
+    "text": "a",
+    "segs": "cdegm",
+    "comment": ""
+  },
+  {
+    "id": "0x42",
+    "text": "b",
+    "segs": "cdefgh",
+    "comment": ""
+  },
+  {
+    "id": "0x43",
+    "text": "c",
+    "segs": "degh",
+    "comment": ""
+  },
+  {
+    "id": "0x44",
+    "text": "d",
+    "segs": "bcdegh",
+    "comment": ""
+  },
+  {
+    "id": "0x45",
+    "text": "e",
+    "segs": "deg",
+    "comment": ""
+  },
+  {
+    "id": "0x46",
+    "text": "?",
+    "segs": "a",
+    "comment": "OVE overbar (hangman character - head only)"
+  },
+  {
+    "id": "0x47",
+    "text": "?",
+    "segs": "ai",
+    "comment": "SUP high-T (hangman head and neck/torso)"
+  },
+  {
+    "id": "0x48",
+    "text": "?",
+    "segs": "ain",
+    "comment": "HAN hangman with left leg"
+  },
+  {
+    "id": "0x49",
+    "text": "?",
+    "segs": "aimn",
+    "comment": "HAN hangman with left, right legs"
+  },
+  {
+    "id": "0x4a",
+    "text": "?",
+    "segs": "agimn",
+    "comment": "HAN hangman with both legs, left arm"
+  },
+  {
+    "id": "0x4b",
+    "text": "?",
+    "segs": "aghimn",
+    "comment": "HAN full hangman"
+  },
+  {
+    "id": "0x4c",
+    "text": "?",
+    "segs": "bhin",
+    "comment": "MIC Greek mu"
+  },
+  {
+    "id": "0x4d",
+    "text": "?",
+    "segs": "dghkn",
+    "comment": "NOT not equal"
+  },
+  {
+    "id": "0x4e",
+    "text": "?",
+    "segs": "adln",
+    "comment": "SIG Greek Sigma"
+  },
+  {
+    "id": "0x4f",
+    "text": "?",
+    "segs": "djkn",
+    "comment": "ANG angle symbol"
+  },
+  {
+    "id": "0x50",
+    "text": "?",
+    "segs": "ghmn",
+    "comment": "DC1 Greek pi"
+  },
+  {
+    "id": "0x51",
+    "text": "?",
+    "segs": "dmn",
+    "comment": "BEL Greek alpha"
+  },
+  {
+    "id": "0x52",
+    "text": "?",
+    "segs": "adgkmn",
+    "comment": "BAC Greek beta"
+  },
+  {
+    "id": "0x53",
+    "text": "?",
+    "segs": "ghj",
+    "comment": "HTA Greek gamma"
+  },
+  {
+    "id": "0x54",
+    "text": "?",
+    "segs": "fghjm",
+    "comment": "UN unknown"
+  },
+  {
+    "id": "0x55",
+    "text": "?",
+    "segs": "eghn",
+    "comment": "VTA Greek sigma"
+  },
+  {
+    "id": "0x56",
+    "text": "?",
+    "segs": "a",
+    "comment": "OVE overbar (hangman character - head only) (duplicate of 0x46)"
+  },
+  {
+    "id": "0x57",
+    "text": "?",
+    "segs": "abef",
+    "comment": "ESC Greek gamma"
+  },
+  {
+    "id": "0x58",
+    "text": "?",
+    "segs": "ain",
+    "comment": "HAN hangman with left leg (duplicate of 0x48)"
+  },
+  {
+    "id": "0x59",
+    "text": "?",
+    "segs": "aimn",
+    "comment": "HAN hangman with left, right legs (duplicate of 0x49)"
+  },
+  {
+    "id": "0x5a",
+    "text": "?",
+    "segs": "agimn",
+    "comment": "HAN hangman with both legs, left arm (duplicate of 0x4a)"
+  },
+  {
+    "id": "0x5b",
+    "text": "?",
+    "segs": "aghimn",
+    "comment": "HAN full hangman (duplicate of 0x4b)"
+  },
+  {
+    "id": "0x5c",
+    "text": "?",
+    "segs": "bhin",
+    "comment": "MIC Greek mu (duplicate of 0x4c)"
+  },
+  {
+    "id": "0x5d",
+    "text": "?",
+    "segs": "dghkn",
+    "comment": "NOT not equal (duplicate of 0x4d)"
+  },
+  {
+    "id": "0x5e",
+    "text": "?",
+    "segs": "lmn",
+    "comment": "DC3 Greek lamda"
+  },
+  {
+    "id": "0x5f",
+    "text": "?",
+    "segs": "djkn",
+    "comment": "ANG angle symbol (duplicate of 0x4f)"
+  },
+  {
+    "id": "0x60",
+    "text": "?",
+    "segs": "ai",
+    "comment": "SUP high-T (hangman head and neck/torso) (duplicate of 0x47)"
+  },
+  {
+    "id": "0x61",
+    "text": "a",
+    "segs": "cdegm",
+    "comment": "duplicate of 0x41"
+  },
+  {
+    "id": "0x62",
+    "text": "b",
+    "segs": "cdefgh",
+    "comment": "duplicate of 0x42"
+  },
+  {
+    "id": "0x63",
+    "text": "c",
+    "segs": "degh",
+    "comment": "duplicate of 0x43"
+  },
+  {
+    "id": "0x64",
+    "text": "d",
+    "segs": "bcdegh",
+    "comment": "duplicate of 0x44"
+  },
+  {
+    "id": "0x65",
+    "text": "e",
+    "segs": "deg",
+    "comment": "duplicate of 0x45"
+  },
+  {
+    "id": "0x66",
+    "text": "f",
+    "segs": "hjk",
+    "comment": ""
+  },
+  {
+    "id": "0x67",
+    "text": "g",
+    "segs": "cdhm",
+    "comment": ""
+  },
+  {
+    "id": "0x68",
+    "text": "h",
+    "segs": "cefgh",
+    "comment": ""
+  },
+  {
+    "id": "0x69",
+    "text": "i",
+    "segs": "e",
+    "comment": ""
+  },
+  {
+    "id": "0x6a",
+    "text": "j",
+    "segs": "cd",
+    "comment": ""
+  },
+  {
+    "id": "0x6b",
+    "text": "k",
+    "segs": "efghm",
+    "comment": ""
+  },
+  {
+    "id": "0x6c",
+    "text": "l",
+    "segs": "ef",
+    "comment": ""
+  },
+  {
+    "id": "0x6d",
+    "text": "m",
+    "segs": "cghj",
+    "comment": ""
+  },
+  {
+    "id": "0x6e",
+    "text": "n",
+    "segs": "cgh",
+    "comment": ""
+  },
+  {
+    "id": "0x6f",
+    "text": "o",
+    "segs": "cdegh",
+    "comment": ""
+  },
+  {
+    "id": "0x70",
+    "text": "p",
+    "segs": "efgl",
+    "comment": ""
+  },
+  {
+    "id": "0x71",
+    "text": "q",
+    "segs": "fglm",
+    "comment": ""
+  },
+  {
+    "id": "0x72",
+    "text": "r",
+    "segs": "egh",
+    "comment": ""
+  },
+  {
+    "id": "0x73",
+    "text": "s",
+    "segs": "dhm",
+    "comment": ""
+  },
+  {
+    "id": "0x74",
+    "text": "t",
+    "segs": "ghim",
+    "comment": ""
+  },
+  {
+    "id": "0x75",
+    "text": "u",
+    "segs": "cde",
+    "comment": ""
+  },
+  {
+    "id": "0x76",
+    "text": "v",
+    "segs": "en",
+    "comment": ""
+  },
+  {
+    "id": "0x77",
+    "text": "w",
+    "segs": "en",
+    "comment": ""
+  },
+  {
+    "id": "0x78",
+    "text": "x",
+    "segs": "ghjn",
+    "comment": ""
+  },
+  {
+    "id": "0x79",
+    "text": "y",
+    "segs": "cdm",
+    "comment": ""
+  },
+  {
+    "id": "0x7a",
+    "text": "z",
+    "segs": "dgn",
+    "comment": ""
+  },
+  {
+    "id": "0x7b",
+    "text": "{",
+    "segs": "hkm",
+    "comment": "LEF left brace"
+  },
+  {
+    "id": "0x7c",
+    "text": "?",
+    "segs": "dkmn",
+    "comment": "DEL delta"
+  },
+  {
+    "id": "0x7d",
+    "text": ")",
+    "segs": "gln",
+    "comment": "RIG right brace"
+  },
+  {
+    "id": "0x7e",
+    "text": "?",
+    "segs": "adln",
+    "comment": "duplicate of 0x4e"
+  },
+  {
+    "id": "0x7f",
+    "text": "?",
+    "segs": "efgh",
+    "comment": "duplicate of 0x40"
+  }
+]
