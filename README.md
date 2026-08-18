@@ -8,12 +8,16 @@ It's built in two parts:
 - **`hp41-display/`** — a Python CLI that renders HP-41 FOCAL-charset
   strings as clean vector/raster 14-segment display images. This is the
   actual deliverable and is complete.
-- Longer-term, the same geometry/character-table data is meant to become
-  the source of truth for a new piece of hardware: a quad-register 400x240
-  Sharp Memory LCD add-on for [soynut](https://github.com/jacob-rn-wallace/soynut),
-  an HP-41 emulator running on a Raspberry Pi Pico 2. Magellan doesn't
-  touch soynut's code directly — it's geometry data that soynut's own
-  build tooling consumes.
+- The same geometry/character-table data is also the source of truth
+  driving a real piece of hardware: a quad-register 400x240 Sharp Memory
+  LCD add-on for [soynut](https://github.com/jacob-rn-wallace/soynut), an
+  HP-41 emulator running on a Raspberry Pi Pico 2. That integration is
+  built and running — soynut's `quad/` firmware target renders live stack
+  arithmetic (FIX/SCI/ENG-aware) and full ALPHA text entry on real Sharp
+  LCD hardware, generated at build time from this repo's vector geometry
+  via a precomputed pixel-lookup table (no floating point/polygon math on
+  the device itself). Magellan doesn't touch soynut's code directly — it's
+  geometry data that soynut's own build tooling consumes.
 
 The display is a "sunburst" 14-segment layout (an unsplit hexagonal outer
 ring plus an 8-arm inner asterisk, all meeting at one center point) — the
@@ -59,3 +63,16 @@ table is transcribed as data from Nonpareil's `41cv.ncd.tmpl`
 (CC-BY-SA 2.5, Copyright 2006/2008 Eric Smith) with full provenance kept
 in the module docstring. See `CLAUDE.md` for the full technical writeup,
 including how the geometry was derived and cross-checked.
+
+## License
+
+This project's own code (`segments.py`, `renderer.py`, `render.py`,
+`tools/`) is licensed GPL-2.0-or-later — see `LICENSE` — matching
+[soynut](https://github.com/jacob-rn-wallace/soynut), the project this
+repo's data feeds into.
+
+`data/charset_41.py`'s character table is transcribed data, not original
+code, and keeps the CC-BY-SA 2.5 attribution of its source (Nonpareil's
+`41cv.ncd.tmpl`, Copyright 2006/2008 Eric Smith) as documented in that
+file's own module docstring, independent of the GPL license covering the
+rest of the repo.
