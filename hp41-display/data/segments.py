@@ -205,7 +205,7 @@ SEGMENT_ORDER = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m"
 # At least as thick as the outer ring bars themselves
 # (2*OUTER_HALF_THICK_FRAC = 0.15), so a decimal point never reads as
 # smaller/fainter than the strokes it's punctuating - confirmed as a
-# real legibility problem on the DM41X-style Sharp LCD display (soynut)
+# real legibility problem on the quad-register Sharp LCD display (soynut)
 # at the old 0.11 size, small enough to be hard to discern at all.
 _DOT_SIZE = 0.16 * CELL_WIDTH
 _GAP_DOT_X = CELL_WIDTH  # centered on the cell boundary / inter-cell gap

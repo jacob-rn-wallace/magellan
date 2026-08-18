@@ -6,7 +6,7 @@ Magellan is a personal-reference project for producing an accurate,
 original rendering of the HP-41C/CV/CX's 14-segment alphanumeric display —
 both as high-resolution offline mockups (the `hp41-display/` Python tool,
 built first) and, longer-term, as the actual visual design driving a new
-piece of hardware: a DM41X-style 400x240 Sharp Memory LCD add-on for
+piece of hardware: a quad-register 400x240 Sharp Memory LCD add-on for
 **soynut** (`/Users/jake/soynut`, a separate repo — an HP-41 emulator
 running on a Raspberry Pi Pico 2). Magellan is not an emulator and does not
 touch soynut's code directly; it's the geometry/character-table source of
@@ -166,13 +166,13 @@ before importing `cairosvg` — no action needed, just don't be confused if
 you see this error outside of `render.py` (e.g. testing `cairosvg` directly
 in a fresh shell).
 
-## The bigger picture: soynut + DM41X integration
+## The bigger picture: soynut + quad-register display integration
 
 The actual goal driving this project: build a **new, separate physical
 unit** — soynut's emulator core driving a 400x240 Sharp Memory LCD
 (LS027B7DH01) via SPI from a Pico 2, instead of soynut's current 144x32
-NHD14432 (ST7920, 8-bit parallel), styled similarly to the SwissMicros
-DM41X, showing **all four stack registers (T/Z/Y/X)** instead of just X.
+NHD14432 (ST7920, 8-bit parallel), showing **all four stack registers
+(T/Z/Y/X)** at once instead of just X.
 Magellan's `data/segments.py`/`data/charset_41.py` are meant to become the
 authoritative source that a new build-time Python generator (living in
 soynut, not here) rasterizes into a precomputed C pixel-lookup table — the
@@ -230,7 +230,7 @@ on the decode function.
   known key sequences via soynut's `tools/hp41_keyboard_gui.py`, compare
   printed values against expected stack contents over USB serial.
 - **Phase 1 — Sharp LCD hardware bring-up sandbox** (independent of Phase
-  2, not yet started). New standalone `dm41x_bringup/` directory in soynut,
+  2, not yet started). New standalone `quad_bringup/` directory in soynut,
   mirroring its existing `lcd_bringup/` sandbox pattern (permanent, not a
   staging area). Vendors exactly 4 files from
   `/Users/jake/pico_sharpmem_display-main` (LGPL-2.1, already confirmed
@@ -244,7 +244,7 @@ on the decode function.
   bring-up.
 - **Phase 2 — 400x240 segment font-table generation** (independent of
   Phase 1, not yet started). New Python generator living in soynut
-  (`font-tables/gen_dm41x_segment_table.py`), importing this repo's
+  (`font-tables/gen_quad_segment_table.py`), importing this repo's
   `data/segments.py`/`data/charset_41.py` directly, rasterizing each
   polygon at a chosen cell pixel size via point-in-polygon fill, and
   emitting a C header in the same flattened-pixel-array shape as soynut's
@@ -255,8 +255,8 @@ on the decode function.
   out of `hp41_elite_display_bridge.c` into its own hardware-agnostic
   module so the new display doesn't need to compile in Elite Mode's
   144x32-specific pixel-plotting code just to reuse one function. New pure,
-  host-testable `hp41_dm41x_display_compute_framebuffer()`.
-- **Phase 4 — new `dm41x/` firmware build target** (not yet started). New
+  host-testable `hp41_quad_display_compute_framebuffer()`.
+- **Phase 4 — new `quad/` firmware build target** (not yet started). New
   top-level directory in soynut, sibling to `firmware/`, own CMakeLists.txt
   modeled on it. First use of `hardware_spi` anywhere in soynut. Needs a
   new periodic-forced-refresh mechanism (reusing soynut's existing
@@ -271,7 +271,7 @@ on the decode function.
   by which `.c` files a given build target compiles, never `#ifdef` or a
   vtable.
 - Every existing display path is precomputed-pixel-table lookup, zero
-  floating point/polygon math at runtime — the new DM41X path should match
+  floating point/polygon math at runtime — the new QUAD path should match
   this, which is exactly why Phase 2 rasterizes Magellan's vector geometry
   at Python build time rather than drawing polygons on-device.
 - `sim/sim_main.c` (a full second `main.c`, "adapted line-by-line" from
